@@ -1,0 +1,280 @@
+/* CSS file for my site */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #f1f1f1;
+    /* background: #eee; */
+    /* font-family: Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+    font-weight: 400; /* normal */
+}
+
+.container {
+    max-width: 750px;
+    margin: auto;
+    margin-top: 20px;
+} 
+
+@media (max-width: 650px) {
+    .container {
+        font-size: 1.2rem;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 650px) {
+    .navbar, 
+    footer {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .navbar ul,
+    .navbar ul li {
+        margin-right: 0px;
+        padding: 5px;
+    
+    }
+}
+@media (max-width: 650px) {
+    .info {
+        display: block;
+    }
+}
+
+header {
+    margin-top: 60px;
+    border: 1px solid grey;
+    border-radius: 15px;
+    text-align: center;
+
+}
+
+h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    /* text-align: center; */
+}
+
+h4 {
+    color: red;
+    text-align: center;
+}
+
+.card {
+    padding: 20px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+    margin-bottom: 25px;
+}
+
+.card:hover, img:hover, header:hover {
+    box-shadow: 10px 10px 14px rgba(32, 232, 14, 0.25);
+}
+
+.card p {
+    font-size: 14px;
+}
+
+ul {
+    padding: 20px;
+}
+
+#header {
+    background: #ddd;
+    padding: 10px;
+}
+
+#header, .card {
+    margin-bottom: 10px;
+}
+
+.color-teal {
+    color:teal;
+    background: #99CCCC; 
+}
+
+.color-mlb {
+    color:mediumslateblue;
+    background: #99CCFF; 
+}
+
+.info {
+    /* background: #9999CC; */
+    display: flex;
+}
+
+.info-text {
+    margin-left: 40px;
+}
+
+.info-text p {
+    font-weight: 900;
+}
+
+img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow: 6px 7px 14px rgba(0, 0, 0, 0.25);
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+    transition: all .2s; 
+}
+
+.card a:hover {
+    color: mediumslateblue;
+    font-size: 1.5rem;
+} 
+
+/* a:visited {
+    color: grey;
+} */
+
+.btn {
+    background: mediumslateblue;
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.blocks .block {
+    width: 33%;
+    float:left;
+}
+
+.list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.list-hobby {
+    margin: 0;
+    padding: 0;
+    list-style: circle;
+}
+.list-hobby li {
+    padding: 0 15px;
+    margin-left: 15px;
+}
+
+.table {
+    width: 100%;
+}
+
+.table td , th{
+    text-align:left;
+    /* border-bottom: 1px solid grey; */
+}
+
+.table td:hover , th:hover {
+    background: #006666; 
+    color: #fff;
+}
+
+.table tr:nth-child(even), th {
+    background: #339999;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background: lightslategray;
+    /* padding: 10px 20px; */
+    margin-bottom: 10px;
+
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 20px;
+    display: flex;
+
+}
+
+.navbar ul li {
+    margin-right: 10px;
+    padding: 10px;
+
+}
+
+.navbar ul li:hover {
+    background: rgb(62, 71, 80);
+    box-shadow: 0 0 20px 10px rgba(32, 232, 14, 0.25);
+
+}
+
+.navbar a {
+    color: #fff;
+
+}
+
+.form input,
+.form select,
+.form textarea{
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+#color {
+    padding: 0; 
+    background: transparent;
+}
+.form-group label {
+    display: block;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 10px;
+    /* background: transparent; */
+    /* border-bottom: 1px solid #ccc; */
+    padding: 10px;
+    outline: none;
+    color: grey;
+    font-family: inherit;
+}
+
+.form-row {
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.form-row .form-group {
+    margin-right: 20px;
+    width: 50%;
+    /* display: inline-block;
+    width: calc(50% - 20px); */
+}
+
+.form-row .form-group:last-child {
+    margin-right: 0;
+}

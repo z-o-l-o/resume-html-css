@@ -7,121 +7,188 @@
     <meta name="keywords" content="web developer fullstack resume cv html css javascript nodejs vuejs reactjs sveltejs">
     <meta name="description" content="Это сайт Влада - Мое онлайн резюме Web разработчика Fullstack Javascript">
     <title>Vlad resume</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <img src="./julian-assange.jpg" width="120px" alt="мое фото">
-    <h1>VLAD aka HELP-CHINA</h1>
-    <hr color="blue">
-    <p>Я веб разработчик <strong>Full stack на Javascript</strong>.</p>
+    <div class="container">
 
-    <p>Я обожаю <strong>Javascript</strong> и все , что с ним связано: <br><em>Node.js, Express.js, React.js, Vue.js, Svelte.js, ... </em></p>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Кратко</a></li>
+                <li><a href="#">Опыт</a></li>
+                <li><a href="#">Хобби</a></li>
+                <li><a href="#">СоцСети</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </nav>
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed error commodi repellat culpa sint rerum, a, architecto veritatis magni aut ratione quisquam perspiciatis maiores quibusdam iste, sit eveniet tempore facere.</p>
+        <header id="header">
+            Персональный сайт-резюме
+        </header>
 
-    <h4>Опыт работы:</h4>
-    <table>
-        <thead>
-            <tr>
-                <th>Название</th>
-                <th>Должность</th>
-                <th>Год</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Мастер Склад</td>
-                <td>Программист 1С</td>
-                <td>2010-2015</td>
-            </tr>
-            <tr>
-                <td>Бюро ЦАИ</td>
-                <td>Чертежник 2D/3D</td>
-                <td>2015-2018</td>
-            </tr>
-            <tr>
-                <td>Веб Дизайн</td>
-                <td>Разработчик веб сайтов</td>
-                <td>2018-2022</td>
-            </tr>
-        </tbody>
-    </table>
+        <div class="info">
+            <img src="./my-photo.jpg" alt="мое фото">
+
+            <div class="info-text">
+                <h1>👁️‍🗨️ VLAD aka HELP-CHINA</h1>
+                <!-- <hr color="grey"> -->
+            
+                <div class="card color-mlb">
+            
+                    <p>Я веб разработчик <strong>Full stack на Javascript</strong>.</p>
+            
+                    <p>Я обожаю <strong>Javascript</strong> и все , что с ним связано: <br><em>Node.js, Express.js, React.js, Vue.js, Svelte.js, ... </em></p>
+            
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed error commodi repellat culpa sint rerum, a, architecto veritatis magni aut ratione quisquam perspiciatis maiores quibusdam iste, sit eveniet tempore facere.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card color-teal">
+            <h4>Опыт работы:</h4>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Название</th>
+                        <th>Должность</th>
+                        <th>Год</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Мастер Склад</td>
+                        <td>Программист 1С</td>
+                        <td>2010-2015</td>
+                    </tr>
+                    <tr>
+                        <td>Бюро ЦАИ</td>
+                        <td>Чертежник 2D/3D</td>
+                        <td>2015-2018</td>
+                    </tr>
+                    <tr>
+                        <td>Веб Дизайн</td>
+                        <td>Разработчик веб сайтов</td>
+                        <td>2018-2022</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
         
-        <h4>Мои хобби:</h4>
-    <ul type="circle">
-        <li>Программирование</li>
-        <li>Верховая езда</li>
-        <li>Шахматы</li>
-        <li>Компьютерные технологии</li>
-        <li>Иностранные языки</li>
-    </ul>
-
-    <h4>Я в социальных сетях:</h4>
-
-    <a href="https://facebook.com" target="_blank">Facebook</a> 
-    |
-    <a href="https://instagram.com" target="_blank">Instagram</a> 
-    |
-    <a href="https://telegram.org/" target="_blank">Telegram</a> 
-    |
-    <a href="https://youtube.com" target="_blank">Youtube</a>
-
-    <h4>Связаться со мной:</h4>
-    <form action="/">
-        <div>
-            <label for="name">Ваше имя:</label>
-            <input type="text" id="name" placeholder="Введите имя">
-        </div>
-        <div>
-            <label for="email">Ваш email:</label>
-            <input type="email" id="email" placeholder="Введите email">
-        </div>
-        <div>
-            <label for="number">Ваше ценовое предложение ($ в час):</label>
-            <input type="number" value=20 id="number" min="20" step="5">
-        </div>
-        <div>
-            <label for="part">Раздел в разработке:</label>
-            <select name="" id="part">
-                <option value="frontend" selected>Frontend</option>
-                <option value="backend">Backend</option>
-                <option value="fullstack">Fullstack</option>
-            </select>
-        </div>
-        <div>
-            <label for="number">Планируемые или уже используемые технологии в проекте:</label>
-            <br>
-            <input type="checkbox" name="stack">Vanilla Javascript
-            <input type="checkbox" name="stack">React.js
-            <input type="checkbox" name="stack">Vue.js
-            <input type="checkbox" name="stack">Svelte.js
-            <br>
-            <input type="checkbox" name="stack">Node.js
-            <input type="checkbox" name="stack">Express.js
-            <input type="checkbox" name="stack">Python
-            <input type="checkbox" name="stack">Django
-            <br>
-            <input type="checkbox" name="stack">База данных SQL
-            <input type="checkbox" name="stack">База данных noSQL
-            <br>
-            <input type="checkbox" name="stack">Другое...
+        <div class="card color-mlb">
+            <h4>Мои хобби:</h4>
+            <ul class="list-hobby">
+                <li>Программирование</li>
+                <li>Верховая езда</li>
+                <li>Шахматы</li>
+                <li>Компьютерные технологии</li>
+                <li>Иностранные языки</li>
+            </ul>
         </div>
 
-        <div>
-            <label for="range">Ваше настроение (от 0 до 100):</label>
-            <input type="range" id="range" min="0" max="100" step="5">
-        </div>
-        <div>
-            <label for="color">Цвет настроения:</label>
-            <input type="color" id="color">
-        </div>
-        <div>
-            <label for="message">Сообщение:</label>
-            <br>
-            <textarea id="message" cols="50" rows="10" placeholder="Введите сообщение..."> </textarea>
+        <div class="card color-teal">
+            <h4>Я в социальных сетях:</h4>
+            <a href="https://facebook.com" target="_blank">Facebook</a> 
+            |
+            <a href="https://instagram.com" target="_blank">Instagram</a> 
+            |
+            <a href="https://telegram.org/" target="_blank">Telegram</a> 
+            |
+            <a href="https://youtube.com" target="_blank">Youtube</a>
         </div>
 
-        <button type="submit">Отправить</button>
-    </form>
+        <div class="card color-mlb">
+            <form class="form" action="/">
+                <h4>Связаться со мной:</h4>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Ваше имя:</label> 
+                        <input type="text" id="name" placeholder="Введите имя">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Ваш email:</label>
+                        <input type="email" id="email" placeholder="Введите email">
+                    </div>
+                </div>
+                <div>
+                    <label for="number">Ваше предложение ($ в час):</label>
+                    <input type="number" value=20 id="number" min="20" step="5">
+                </div>
+                <div>
+                    <label for="part">Раздел в разработке:</label>
+                    <select name="" id="part">
+                        <option value="frontend" selected>Frontend</option>
+                        <option value="backend">Backend</option>
+                        <option value="fullstack">Fullstack</option>
+                    </select>
+                </div>
+                <div class="blocks">
+                    <label for="stack">Планируемые или уже используемые технологии в проекте:</label>
+                    <div class="block">
+                        <ul class="list">
+                            <li>
+                                <input type="checkbox" name="stack">Vanilla Javascript
+                            </li>
+                            <li>
+                                <input type="checkbox" name="stack">React.js
+                            </li>
+                            <li>
+                                <input type="checkbox" name="stack">Vue.js
+                            </li>
+                            <li>
+                                <input type="checkbox" name="stack">Svelte.js
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="block">
+                        <ul class="list">
+                            <li>
+                                <input type="checkbox" name="stack">Node.js
+                            </li>
+                            <li>
+                                <input type="checkbox" name="stack">Express.js
+                            </li>
+                            <li>
+                                <input type="checkbox" name="stack">Python
+                            </li>
+                            <li>
+                                <input type="checkbox" name="stack">Django
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="block">
+                        <ul class="list">
+                            <li>
+                                <input type="checkbox" name="stack">БД SQL
+                            </li>
+                            <li>
+                                <input type="checkbox" name="stack">БД noSQL
+                            </li>
+                            <li>
+                                <input type="checkbox" name="stack">Другое...
+                            </li>
+                        </ul>
+                        <br>
+                    </div>
+                </div>
+                
+                <div>
+                    <label for="range">Ваше настроение (от 0 до 100):</label>
+                    <input type="range" id="range" min="0" max="100" step="5">
+                </div>
+                <div>
+                    <label for="color">Цвет настроения:</label>
+                    <input type="color" id="color">
+                </div>
+                <div class="form-group">
+                    <label for="message">Сообщение:</label>
+                    <textarea id="message" cols="50" rows="10" placeholder="Введите сообщение..."> </textarea>
+                </div>
+                
+                <button class="btn" type="submit">Отправить</button>
+            </form>
+        </div>
 
+        <footer>@vlad 2022</footer>
+    </div>
 </body>
 </html>
