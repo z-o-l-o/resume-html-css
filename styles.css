@@ -265,6 +265,13 @@ a {
     font-family: inherit;
 }
 
+select,
+#number {
+    outline: none;
+    color: grey;
+    margin-bottom: 10px;
+}
+
 .form-row {
     margin-bottom: 10px;
     display: flex;
